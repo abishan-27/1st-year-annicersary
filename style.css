@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+body {
+    background-color: #fff0f3;
+  font-family: 'Merienda', cursive;
+    color: #590d22;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+	  font-size: 32px;
+}
+
+header {
+    padding: 100px 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.memory-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 80%;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.memory-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.quote {
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #a4133c;
+}
+
+.final-message {
+    padding: 100px 20px;
+    background: #ffb3c1;
+}
+
+/* Floating Hearts Styling */
+.heart {
+    position: fixed;
+    color: #ff4d6d;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
